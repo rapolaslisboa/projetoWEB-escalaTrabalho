@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>Projeto WEB</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/styleCadastro.css" media="screen"/>
+	</head>
+	
+	
+	<body>	
+
+		<header class="selector" id="cabeçalho">           
+            
+            <div class="container">
+                 <nav class="menu">
+                    <li>
+                        <a href="paginaEscala.html">Escala de trabalho</a>
+                    </li>
+                    <li>
+                        <a href="paginaMontagem.html">Montagem da escala de trabalho</a>
+                    </li>
+                    <li>
+                        <a href="paginaCadastro.html">Cadastro de colaboradores</a>
+                    </li>
+                    <li>
+                        <a href="paginaGerenciamento.html">Gerenciamento de colaboradores</a>
+                    </li>
+                </nav>        
+            </div>
+
+        </header>
+		
+		<div class="cadastroForm-container"> 
+			
+			<h2 class="cadastroCabeçalho">
+				<span>Cadastre um colaborador</span>	
+			</h2>	
+
+			<div>
+				<p class="textoForm central">
+					<span>Preencha o formulário abaixo</span>
+				</p>
+			</div>
+			
+			<form class="cadastroForm">
+
+				<div class="inputForm" id="email">
+					<label class="inputForm-label" for="email-input">E-mail</label>
+					<input class="form-control" type="email" autocomplete="on" placeholder="Informe seu e-mail" name="email" id="email-input" required>
+				</div>
+
+				<div class="inputForm" id="nome">
+					<label class="inputForm-label" for="nome-input">Seu nome</label>
+					<input class="form-control" type="text" autocomplete="on" name="nome" id="nome-input" placeholder="Informe seu nome completo" required>
+				</div>
+
+				<div class="inputForm" id="dataNascimento">
+					<label class="inputForm-label" for="dataNascimento-input">Data de nascimento</label>
+					<input class="form-control" type="tel" autocomplete="on" name="dataNascimento" id="dataNascimento-input" placeholder="Informe sua data de nascimento" required>	
+				</div>
+
+				<div class="inputForm" id="cpf">
+						<label class="inputForm-label" for="cpf-input">CPF</label>
+						<input class="form-control" type="text" autocomplete="on" name="cpf" id="cpf-input" placeholder="Informe seu CPF" required>
+				</div>
+
+				<div class="inputForm" id="genero">
+						<label class="inputForm-label" for="genero-input">Sexo</label>
+						<div class="radio">
+							<input class="inputForm-radio" type="radio" autocomplete="on" id="masculino" name="genero" value="M" checked>
+							<label for="masculino">Masculino</label>
+						</div>
+						<div class="radio">
+							<input class="inputForm-radio" type="radio" autocomplete="on" id="feminino" name="genero" value="F">
+							<label for="feminino">Feminino</label>
+						</div>
+				</div>
+
+				<div class="inputForm" id="telefone">
+						<label class="inputForm-label" for="telefone-input">Telefone</label>
+						<input class="form-control" type="tel" autocomplete="on" name="telefone" id="telefone-input" placeholder="Informe seu telefone" required>	
+				</div>
+
+				<div class="inputForm" id="oficio">
+						<label class="inputForm-label" for="oficio-input">Ofício</label>
+						<div class="radio">
+							<input class="inputForm-radio" type="radio" autocomplete="on" id="portaria" name="oficio" value="portaria" checked>
+							<label for="portaria">Portaria</label>
+						</div>
+						<div class="radio">
+							<input class="inputForm-radio" type="radio" autocomplete="on" id="vigilancia" name="oficio" value="vigilancia">
+							<label for="vigilancia">Vigilância</label>
+						<div class="radio">
+							<input class="inputForm-radio" type="radio" autocomplete="on" id="administraçao" name="oficio" value="administraçao">
+							<label for="administraçao">Administração</label>
+						</div>
+				</div>
+
+				<button type="submit" class="btn btn-primary cadastroForm-submit">Cadastrar</button>
+	
+
+			</form>
+
+		</div>	
+
+		<script src="jquery-3.4.1.min.js"></script>
+		<script src="jquery.mask.js"></script>
+
+		<script>
+				$('document').ready(function(){
+					$("#dataNascimento-input").mask("99/99/9999");
+					$("#cpf-input").mask("999.999.999-99");
+				});
+				
+				var SPMaskBehavior = function (val) {
+  					return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+				},
+				spOptions = {
+  					onKeyPress: function(val, e, field, options) {
+      				field.mask(SPMaskBehavior.apply({}, arguments), options);
+    				}
+				};
+
+				$("#telefone-input").mask(SPMaskBehavior, spOptions);
+        </script>	
+		
+	</body>
+
+
+
+</html>

@@ -1,0 +1,87 @@
+.selector {
+    background: -webkit-linear-gradient(left, #105dad, #1f51ff8c 35%, #1f51ff8c 35%, #0229b952);
+    width: 100%;
+    height: 30px;
+    margin: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    font-family: Arial,Helvetica,Verdana,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-width: 100%;
+}
+
+.menu {
+    background: none;
+    width: 100%;
+    float: left;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: auto;
+    bottom: 45px;
+    left: auto;
+}
+
+li a:hover {
+    color: #277fef;
+  }
+
+.menu li {
+    position: relative;
+    float: left;
+    left: 0;
+    width: auto;
+    padding: 0 10px;
+    margin-left: 0;
+    margin-top: 100px;
+    list-style-type: none
+}
+
+.menu a {
+    padding: 0;
+    display: block;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    -webkit-transition: color 0.1s;
+    -moz-transition: color 0.1s;
+    transition: color 0.1s;
+    text-decoration: none;
+    font-size: medium;
+    font-family: sans-serif;
+    color: #4c4a4ae8;
+}
+
+.container-span {
+    max-width: 740px;
+    margin: 3rem auto 0;
+    padding: 120px;
+}
+
+.textoCentro {
+    margin: 2rem 0;
+}
+
+.textoCentro.central {
+    text-align: center;
+    background-image: linear-gradient(180deg,transparent 10px,#e3e3e3 0,#e3e3e3 12px,transparent 0);
+    margin: 0;
+}
+
+.textoCentro>span {
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 10px;
+    text-transform: none;
+    font-size: 15px;
+}
