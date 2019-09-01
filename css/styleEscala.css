@@ -3,12 +3,13 @@
     width: 100%;
     height: 30px;
     margin: auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(47, 97, 210, 0.65);
 }
 
 .container {
     margin-right: auto;
     margin-left: auto;
+    width: 97%;
 }
 
 body {
@@ -26,7 +27,6 @@ body {
     background: none;
     width: 100%;
     float: left;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
     position: relative;
     top: auto;
     bottom: 45px;
@@ -43,6 +43,8 @@ li a:hover {
     left: 0;
     width: auto;
     padding: 0 10px;
+    padding-left: 35px;
+    margin-top: 25px;
     margin-left: 0;
     margin-top: 100px;
     list-style-type: none
@@ -52,12 +54,11 @@ li a:hover {
     padding: 0;
     display: block;
     padding-bottom: 20px;
-    padding-left: 20px;
-    -webkit-transition: color 0.1s;
-    -moz-transition: color 0.1s;
     transition: color 0.1s;
     text-decoration: none;
-    font-size: medium;
+    padding-top: 30px;
+    padding-left: 60px;
+    font-size: larger;
     font-family: sans-serif;
     color: #4c4a4ae8;
 }
@@ -75,7 +76,6 @@ li a:hover {
 .textoCentro.central {
     text-align: center;
     background-image: linear-gradient(180deg,transparent 10px,#e3e3e3 0,#e3e3e3 12px,transparent 0);
-    margin: 0;
 }
 
 .textoCentro>span {
@@ -84,4 +84,10 @@ li a:hover {
     padding: 0 10px;
     text-transform: none;
     font-size: 15px;
+}
+
+.alinharLogo{
+    float: left;
+    padding: 0 10px;
+    padding-top: 63px;
 }
