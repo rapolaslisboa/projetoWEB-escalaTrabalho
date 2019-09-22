@@ -200,7 +200,7 @@ body {
 
 .textoForm.central {
     text-align: center;
-    background-image: linear-gradient(180deg,transparent 10px,#e3e3e3 0,#e3e3e3 12px,transparent 0);
+    background-image: linear-gradient(180deg,transparent 10px,#2378f78c 0,#7bb4fb73 12px,transparent 0);
     margin: 0;
 }
 
@@ -259,3 +259,40 @@ select.basic {
     padding: 0 10px;
     padding-top: 63px;
 }
+
+.password-checkbox{
+    margin-top: 20px;
+}
+
+.logo-div {
+    display: flex;
+    height: 0px; /* Or whatever */
+}
+
+.logo-div img {
+    height: 150px;
+    margin: auto;
+}
+
+.logo-div a {
+    margin: auto;
+}
+
+#mensagem {
+    transition: all 0.52s;
+    background: #FFF;
+    border: #777 solid 1px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.52);
+    position: fixed;
+    top: -150px;
+    width: 50%;
+    padding: 25px 0;
+    text-align: center;
+    left: 25%;
+    opacity: 0;
+  }
+  
+  #mensagem.ver {
+    top: 75px;
+    opacity: 1;
+  }
